@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixiPalz</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: transparent;
+        }
+        /*
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }*/
+
+        #pixipal-image {
+            width: 256px; /* Width of a single frame */
+            height: 196px; /* Height of a single frame */
+            background-image: url('assets\\images\\Asta-idle-spritesheet(1).png');
+            background-repeat: no-repeat;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .pet-animate {
+            animation: bounce 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--<img id="pixipal-image" src="assets\images\Asta-idle(3).gif" alt="PixiPal" style="cursor: pointer;">-->
+    <div id="pixipal-image" style="cursor: pointer;"></div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
