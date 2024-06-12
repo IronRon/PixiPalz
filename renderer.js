@@ -79,29 +79,33 @@ const manager = new AnimationManager('pixipal-image');
 manager.setAnimation('idle', 'assets/images/Asta-idle(1).json');
 
 ipcRenderer.on('action', (event, action) => {
-    if (action === 'feed') {
-        feedPixiPal(manager);
-        console.log('PixiPal is fed!');
-    }
-    if (action === 'run') {
-        let runCompletePromise = new Promise(resolve => {
-            // Listen for the run completion message from main
-            ipcRenderer.once('run-complete', () => {
-                resolve();
-            });
-
-            // Trigger the window move in main
-            //ipcRenderer.send('start-run');
-        });
-
-        runPixiPal(manager, runCompletePromise);
-        console.log('PixiPal run');
+    switch(action) {
+        case 'feed':
+            feedPixiPal(manager);
+            console.log('PixiPal is fed!');
+            break;
+        case 'run':
+            runPixiPal(manager);
+            console.log('PixiPal is running!');
+            break;
+        case 'idle':
+            idlePixiPal(manager);
+            console.log('PixiPal is idle!');
+            break;
     }
 });
 
+// Function to trigger the idle animation
+async function idlePixiPal(manager) {
+    // Switch to idle animation
+    manager.frameRate = 200;
+    await manager.setAnimation('idle', 'assets/images/Asta-idle(1).json');
+
+}
+
 
 // Function to trigger the run animation
-async function runPixiPal(manager, onRunComplete) {
+async function runPixiPal(manager) {
     // Switch to run animation
     manager.frameRate = 80;
     await manager.setAnimation('run', 'assets/images/asta-run.json');
@@ -110,18 +114,12 @@ async function runPixiPal(manager, onRunComplete) {
         width: parseInt(manager.spriteContainer.style.width, 10), 
         height: parseInt(manager.spriteContainer.style.height, 10)
     });
-    
-    // Wait for the callback from the moveWindowAcrossScreen
-    onRunComplete.then(() => {
-        // Switch to idle animation after the run completes
-        manager.frameRate = 200;
-        manager.setAnimation('idle', 'assets/images/Asta-idle(1).json');
-    });
 }
 
 // Function to trigger the taunt animation
 async function feedPixiPal(manager) {
     // Switch to taunt animation
+    manager.frameRate = 200;
     await manager.setAnimation('taunt', 'assets/images/Asta-taunt(1).json');
 
     // Optionally, wait for the taunt animation to complete before switching back
@@ -142,7 +140,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // setTimeout(() => {
         //     pixipal.classList.remove('pet-animate');
         // }, 1000);
+        ipcRenderer.send('stop-moving');
         feedPixiPal(manager);
+    });
+
+    ipcRenderer.on('change-direction', (event, direction) => {
+        if (direction === 'left') {
+            pixipal.style.transform = 'scaleX(-1)'; // Flip sprite horizontally
+        } else {
+            pixipal.style.transform = 'scaleX(1)';
+        }
     });
 });
 
