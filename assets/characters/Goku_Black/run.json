@@ -1,0 +1,274 @@
+{
+    "frames": {
+        "GokuBlack-run0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run1.png": {
+            "frame": {
+                "x": 180,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run2.png": {
+            "frame": {
+                "x": 360,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run3.png": {
+            "frame": {
+                "x": 0,
+                "y": 150,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run4.png": {
+            "frame": {
+                "x": 180,
+                "y": 150,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run5.png": {
+            "frame": {
+                "x": 360,
+                "y": 150,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run6.png": {
+            "frame": {
+                "x": 0,
+                "y": 300,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run7.png": {
+            "frame": {
+                "x": 180,
+                "y": 300,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run8.png": {
+            "frame": {
+                "x": 360,
+                "y": 300,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run9.png": {
+            "frame": {
+                "x": 0,
+                "y": 450,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run10.png": {
+            "frame": {
+                "x": 180,
+                "y": 450,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run11.png": {
+            "frame": {
+                "x": 360,
+                "y": 450,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        },
+        "GokuBlack-run12.png": {
+            "frame": {
+                "x": 0,
+                "y": 600,
+                "w": 180,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 180,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 180,
+                "h": 150
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "run.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 540,
+            "h": 750
+        }
+    }
+}

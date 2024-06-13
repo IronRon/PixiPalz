@@ -1,0 +1,214 @@
+{
+    "frames": {
+        "GokuBlack-taunt0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt1.png": {
+            "frame": {
+                "x": 285,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt2.png": {
+            "frame": {
+                "x": 570,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt3.png": {
+            "frame": {
+                "x": 0,
+                "y": 210,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt4.png": {
+            "frame": {
+                "x": 285,
+                "y": 210,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt5.png": {
+            "frame": {
+                "x": 570,
+                "y": 210,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt6.png": {
+            "frame": {
+                "x": 0,
+                "y": 420,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt7.png": {
+            "frame": {
+                "x": 285,
+                "y": 420,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt8.png": {
+            "frame": {
+                "x": 570,
+                "y": 420,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        },
+        "GokuBlack-taunt9.png": {
+            "frame": {
+                "x": 0,
+                "y": 630,
+                "w": 285,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 285,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 285,
+                "h": 210
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "taunt.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 855,
+            "h": 840
+        }
+    }
+}

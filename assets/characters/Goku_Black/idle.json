@@ -1,0 +1,174 @@
+{
+    "frames": {
+        "GokuBlack-idle0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        },
+        "GokuBlack-idle1.png": {
+            "frame": {
+                "x": 210,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        },
+        "GokuBlack-idle2.png": {
+            "frame": {
+                "x": 420,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        },
+        "GokuBlack-idle3.png": {
+            "frame": {
+                "x": 0,
+                "y": 204,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        },
+        "GokuBlack-idle4.png": {
+            "frame": {
+                "x": 210,
+                "y": 204,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        },
+        "GokuBlack-idle5.png": {
+            "frame": {
+                "x": 420,
+                "y": 204,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        },
+        "GokuBlack-idle6.png": {
+            "frame": {
+                "x": 0,
+                "y": 408,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        },
+        "GokuBlack-idle7.png": {
+            "frame": {
+                "x": 210,
+                "y": 408,
+                "w": 210,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 210,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 210,
+                "h": 204
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "idle.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 630,
+            "h": 612
+        }
+    }
+}
