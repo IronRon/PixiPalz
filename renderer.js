@@ -34,7 +34,7 @@ class AnimationManager {
             width: data.frames[Object.keys(data.frames)[0]].frame.w, 
             height: data.frames[Object.keys(data.frames)[0]].frame.h 
         });
-        this.spriteContainer.style.backgroundImage = `url('assets/images/${data.meta.image}')`;
+        this.spriteContainer.style.backgroundImage = `url('assets/characters/Noelle/${data.meta.image}')`;
         this.spriteContainer.style.width = `${data.frames[Object.keys(data.frames)[0]].frame.w}px`;
         this.spriteContainer.style.height = `${data.frames[Object.keys(data.frames)[0]].frame.h}px`;
         this.spriteContainer.style.backgroundPosition = `0px 0px`;
@@ -76,7 +76,7 @@ class AnimationManager {
 
 // Example usage:
 const manager = new AnimationManager('pixipal-image');
-manager.setAnimation('idle', 'assets/images/Asta-idle(1).json');
+manager.setAnimation('idle', 'assets/characters/Noelle/idle.json');
 
 ipcRenderer.on('action', (event, action) => {
     switch(action) {
@@ -99,8 +99,7 @@ ipcRenderer.on('action', (event, action) => {
 async function idlePixiPal(manager) {
     // Switch to idle animation
     manager.frameRate = 200;
-    await manager.setAnimation('idle', 'assets/images/Asta-idle(1).json');
-
+    await manager.setAnimation('idle', 'assets/characters/Noelle/idle.json');
 }
 
 
@@ -108,7 +107,7 @@ async function idlePixiPal(manager) {
 async function runPixiPal(manager) {
     // Switch to run animation
     manager.frameRate = 80;
-    await manager.setAnimation('run', 'assets/images/asta-run.json');
+    await manager.setAnimation('run', 'assets/characters/Noelle/run.json');
     // Trigger the window move in main
     ipcRenderer.send('start-run', { 
         width: parseInt(manager.spriteContainer.style.width, 10), 
@@ -120,14 +119,14 @@ async function runPixiPal(manager) {
 async function feedPixiPal(manager) {
     // Switch to taunt animation
     manager.frameRate = 200;
-    await manager.setAnimation('taunt', 'assets/images/Asta-taunt(1).json');
+    await manager.setAnimation('taunt', 'assets/characters/Noelle/taunt.json');
 
     // Optionally, wait for the taunt animation to complete before switching back
     // This requires knowing the duration of the animation
     const tauntDuration = manager.calculateAnimationDuration('taunt');
     setTimeout(async () => {
         // Switch back to idle animation after the taunt completes
-        await manager.setAnimation('idle', 'assets/images/Asta-idle(1).json');
+        await manager.setAnimation('idle', 'assets/characters/Noelle/idle.json');
     }, tauntDuration);
 }
 

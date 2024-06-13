@@ -1,0 +1,154 @@
+{
+    "frames": {
+        "noelle_taunt0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 84,
+                "h": 156
+            }
+        },
+        "noelle_taunt1.png": {
+            "frame": {
+                "x": 84,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 84,
+                "h": 156
+            }
+        },
+        "noelle_taunt2.png": {
+            "frame": {
+                "x": 168,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 84,
+                "h": 156
+            }
+        },
+        "noelle_taunt3.png": {
+            "frame": {
+                "x": 252,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 84,
+                "h": 156
+            }
+        },
+        "noelle_taunt4.png": {
+            "frame": {
+                "x": 0,
+                "y": 156,
+                "w": 84,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 84,
+                "h": 156
+            }
+        },
+        "noelle_taunt5.png": {
+            "frame": {
+                "x": 84,
+                "y": 156,
+                "w": 84,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 84,
+                "h": 156
+            }
+        },
+        "noelle_taunt6.png": {
+            "frame": {
+                "x": 168,
+                "y": 156,
+                "w": 84,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 84,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 84,
+                "h": 156
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "taunt.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 336,
+            "h": 312
+        }
+    }
+}

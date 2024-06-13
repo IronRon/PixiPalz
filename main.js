@@ -13,8 +13,8 @@ function getImageSize(path) {
 }
 
 let win; // Define win at module scope
-let win_width = 192;
-let win_height = 147;
+let win_width = 105;
+let win_height = 162;
 
 function createWindow() {
     const imagePath = path.join(__dirname, 'assets', 'images', 'Asta-idle(3).gif');
@@ -24,8 +24,8 @@ function createWindow() {
     if (imageSize) {
 
         win = new BrowserWindow({
-            width: 192, // imageSize.width,
-            height: 147,// imageSize.height,
+            width: 105, // imageSize.width,
+            height: 162,// imageSize.height,
             transparent: true, // Make the background transparent
             frame: false,      // Remove the window frame
             alwaysOnTop: true, // Keep window on top of other applications
@@ -87,27 +87,32 @@ ipcMain.on('resize-window', (event, { width, height }) => {
     console.log(`resize ran`);
     const window = BrowserWindow.getFocusedWindow();
     if (window) {
+
+        let mainScreen = screen.getPrimaryDisplay();
+        let dimensions = mainScreen.workAreaSize;
+        let taskbarHeight = mainScreen.bounds.height - mainScreen.workAreaSize.height;
+
+        // Calculate Y position based on taskbar's visibility and position
+        let yPos = mainScreen.bounds.height - taskbarHeight - height;
+
         // Get current window bounds
         const bounds = window.getBounds();
 
         // Calculate new height and maintain the bottom position
-        const newHeight = height;
-        const heightDifference = newHeight - bounds.height;
-        const newY = bounds.y - heightDifference;
+        // const newHeight = height;
+        // const heightDifference = newHeight - bounds.height;
+        // const newY = bounds.y - heightDifference;
 
         // Calculate new width and adjust x to maintain the sides centered
         const newWidth = width;
         const widthDifference = newWidth - bounds.width;
         const newX = bounds.x - widthDifference / 2;  // Adjusted to center horizontally
         
-        //win_width = width;
-        //win_height = newHeight;
-        // Set the new size and position
         win.setBounds({
-            x: bounds.x,
-            y: newY,
-            width: width,
-            height: newHeight
+            x: newX,
+            y: yPos,
+            width: newWidth,
+            height: height
         });
     } else {
         console.error("No focused window available.");
@@ -122,10 +127,10 @@ ipcMain.on('start-run', (event, { width, height }) => {
 let intervalId = null;
 
 function moveWindowAcrossScreen(window) {
-   // width = win_width;
+    //width = win_width;
     //height = win_height;
 
-    console.log(`move call ran`, win_width);
+    //console.log(`move call ran`, win_width);
     let moveStop = false;
 
     let currentPosition = window.getBounds().x;
