@@ -33,11 +33,19 @@ function createMainMenu() {
     });
 }
 
-let win; // Define win at module scope
+let win = null; // Define win at module scope
 let win_width = 105;
 let win_height = 162;
 
 async function createWindow(pixipal) {
+    if (win) {
+        // Optionally: Update the existing window with new content instead of closing it
+        //win.webContents.send('update-pixipal', pixipal);
+        //return;
+        win.close();
+        win = null;
+    }
+
     const pixipalDir = path.join(__dirname, 'assets', 'characters', pixipal);
     const imageSize = await getImageSize(path.join(pixipalDir, 'idle.json'));
 
@@ -81,7 +89,10 @@ async function createWindow(pixipal) {
         }));
         contextMenu.append(new MenuItem({
             label: 'Close',
-            click: () => { win.close(); }
+            click: () => { 
+                win.close();
+                win = null;
+            }
         }));
         
 
@@ -146,8 +157,10 @@ ipcMain.on('start-run', (event, { width, height }) => {
 let intervalId = null;
 
 function moveWindowAcrossScreen(window) {
-    //width = win_width;
-    //height = win_height;
+    if (!window) {
+        console.error('Invalid window object provided');
+        return;
+    }
 
     //console.log(`move call ran`, win_width);
     let moveStop = false;
@@ -166,6 +179,8 @@ function moveWindowAcrossScreen(window) {
 
     // Update target position based on mouse x-coordinate
     function updateTargetPosition() {
+        if (window.isDestroyed()) return;
+
         const point = screen.getCursorScreenPoint();
         const screenWidth = screen.getPrimaryDisplay().workAreaSize.width;
         windowBounds = window.getBounds();
@@ -179,6 +194,11 @@ function moveWindowAcrossScreen(window) {
     }
     
     function move() {
+        if (window.isDestroyed()) {
+            clearInterval(intervalId);
+            intervalId = null;
+            return;
+        }
         updateTargetPosition();
 
         if (Math.abs(windowCenterX - targetPosition) > 40) {
@@ -186,7 +206,7 @@ function moveWindowAcrossScreen(window) {
             currentPosition += Math.floor(moveStep);
         }
 
-        win.setBounds({ 
+        window.setBounds({ 
             x: currentPosition,
             y: window.getBounds().y,
             width: win_width,
@@ -211,6 +231,14 @@ function moveWindowAcrossScreen(window) {
         intervalId = setInterval(move, 80); // Adjust timing for smoother or less frequent updates
     };
 
+    // Clean up on window close
+    win.on('closed', () => {
+        if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+    });
+
     startFollowingMouse();
 }
 
@@ -222,10 +250,6 @@ ipcMain.on('stop-moving', () => {
         console.log('Mouse following stopped due to window click.');
     }
 });
-
-// win.on('closed', () => {
-//     if (intervalId) clearInterval(intervalId);
-// });
 
 // app.whenReady().then(createWindow);
 app.whenReady().then(createMainMenu);
