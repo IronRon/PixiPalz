@@ -1,31 +1,52 @@
 const { app, BrowserWindow, Menu, MenuItem, ipcMain, screen} = require('electron');
 const sizeOf = require('image-size');
 const path = require('path');
+const fs = require('fs').promises;
 
-function getImageSize(path) {
+async function getImageSize(filePath) {
     try {
-        const dimensions = sizeOf(path);
-        return dimensions;
+        console.log(filePath);
+        const data = await fs.readFile(filePath, 'utf8'); // Read the JSON file content
+        const json = JSON.parse(data); // Parse JSON from file content
+        const dimensions = json.frames[Object.keys(json.frames)[0]].frame; // Get the frame data
+        return { width: dimensions.w, height: dimensions.h }; // Return width and height
     } catch (error) {
         console.error('Error getting image size:', error);
         return null;
     }
 }
 
+function createMainMenu() {
+    const mainWindow = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false
+        }
+    });
+
+    mainWindow.loadFile('main-menu.html'); // Load the HTML file containing the menu
+
+    mainWindow.on('closed', () => {
+        console.log('Main menu window was closed');
+    });
+}
+
 let win; // Define win at module scope
 let win_width = 105;
 let win_height = 162;
 
-function createWindow() {
-    const imagePath = path.join(__dirname, 'assets', 'images', 'Asta-idle(3).gif');
-    const imageSize = getImageSize(imagePath);
+async function createWindow(pixipal) {
+    const pixipalDir = path.join(__dirname, 'assets', 'characters', pixipal);
+    const imageSize = await getImageSize(path.join(pixipalDir, 'idle.json'));
 
     // Ensure imageSize is not null
     if (imageSize) {
 
         win = new BrowserWindow({
-            width: 105, // imageSize.width,
-            height: 162,// imageSize.height,
+            width: imageSize.width,
+            height: imageSize.height,
             transparent: true, // Make the background transparent
             frame: false,      // Remove the window frame
             alwaysOnTop: true, // Keep window on top of other applications
@@ -41,10 +62,8 @@ function createWindow() {
         let mainScreen = screen.getPrimaryDisplay();
         let dimensions = mainScreen.workAreaSize;
         let taskbarHeight = mainScreen.bounds.height - mainScreen.workAreaSize.height;
-
         // Calculate Y position based on taskbar's visibility and position
         let yPos = mainScreen.bounds.height - taskbarHeight - win.getBounds().height;
-
         // Set the window position to the bottom of the work area
         win.setPosition(mainScreen.workAreaSize.width - win.getBounds().width, yPos);
 
@@ -71,7 +90,7 @@ function createWindow() {
         });
 
 
-        win.loadFile('index.html');
+        win.loadFile('pixipal.html', { query: { "pixipal": pixipal } });
 
         // Remove the menu bar
         win.setMenu(null);
@@ -208,7 +227,13 @@ ipcMain.on('stop-moving', () => {
 //     if (intervalId) clearInterval(intervalId);
 // });
 
-app.whenReady().then(createWindow);
+// app.whenReady().then(createWindow);
+app.whenReady().then(createMainMenu);
+
+ipcMain.on('launch-pixipal', (event, pixipal) => {
+    console.log(`Launching ${pixipal}`);
+    createWindow(pixipal); // Now createWindow takes a parameter to decide which Pixipal to load
+});
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {

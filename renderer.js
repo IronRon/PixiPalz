@@ -1,5 +1,7 @@
 const { ipcRenderer } = require('electron');
-const fs = require('fs');
+const fs = require('fs').promises;
+
+let pixiPal = null;
 
 class AnimationManager {
     constructor(spriteContainerId) {
@@ -15,8 +17,8 @@ class AnimationManager {
             return this.animations[name]; // return cached animation
         }
 
-        const response = await fetch(filePath);
-        const data = await response.json();
+        const response = await fs.readFile(filePath, 'utf8');
+        const data = JSON.parse(response);
         this.animations[name] = data; // cache the loaded data
         return data;
     }
@@ -34,7 +36,7 @@ class AnimationManager {
             width: data.frames[Object.keys(data.frames)[0]].frame.w, 
             height: data.frames[Object.keys(data.frames)[0]].frame.h 
         });
-        this.spriteContainer.style.backgroundImage = `url('assets/characters/Noelle/${data.meta.image}')`;
+        this.spriteContainer.style.backgroundImage = `url('assets/characters/${pixiPal}/${data.meta.image}')`;
         this.spriteContainer.style.width = `${data.frames[Object.keys(data.frames)[0]].frame.w}px`;
         this.spriteContainer.style.height = `${data.frames[Object.keys(data.frames)[0]].frame.h}px`;
         this.spriteContainer.style.backgroundPosition = `0px 0px`;
@@ -74,9 +76,7 @@ class AnimationManager {
     }
 }
 
-// Example usage:
 const manager = new AnimationManager('pixipal-image');
-manager.setAnimation('idle', 'assets/characters/Noelle/idle.json');
 
 ipcRenderer.on('action', (event, action) => {
     switch(action) {
@@ -99,7 +99,7 @@ ipcRenderer.on('action', (event, action) => {
 async function idlePixiPal(manager) {
     // Switch to idle animation
     manager.frameRate = 200;
-    await manager.setAnimation('idle', 'assets/characters/Noelle/idle.json');
+    await manager.setAnimation('idle', 'assets/characters/' + pixiPal + '/idle.json');
 }
 
 
@@ -107,7 +107,7 @@ async function idlePixiPal(manager) {
 async function runPixiPal(manager) {
     // Switch to run animation
     manager.frameRate = 80;
-    await manager.setAnimation('run', 'assets/characters/Noelle/run.json');
+    await manager.setAnimation('run', 'assets/characters/' + pixiPal + '/run.json');
     // Trigger the window move in main
     ipcRenderer.send('start-run', { 
         width: parseInt(manager.spriteContainer.style.width, 10), 
@@ -119,20 +119,39 @@ async function runPixiPal(manager) {
 async function feedPixiPal(manager) {
     // Switch to taunt animation
     manager.frameRate = 200;
-    await manager.setAnimation('taunt', 'assets/characters/Noelle/taunt.json');
+    await manager.setAnimation('taunt', 'assets/characters/' + pixiPal + '/taunt.json');
 
     // Optionally, wait for the taunt animation to complete before switching back
     // This requires knowing the duration of the animation
     const tauntDuration = manager.calculateAnimationDuration('taunt');
     setTimeout(async () => {
         // Switch back to idle animation after the taunt completes
-        await manager.setAnimation('idle', 'assets/characters/Noelle/idle.json');
+        await manager.setAnimation('idle', 'assets/characters/' + pixiPal + '/idle.json');
     }, tauntDuration);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const pixipal = document.getElementById('pixipal-image');
+function updatePixipalImage(pixipal) {
+    const pixipalImage = document.getElementById('pixipal-image');
+    if (pixipalImage) {
+        pixipalImage.style.backgroundImage = `url('assets/characters/${pixipal}/idle.png')`;
+        manager.setAnimation('idle', 'assets/characters/' + pixiPal + '/idle.json');
+    }
+}
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Get the query parameters from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    pixiPal = urlParams.get('pixipal');
+
+    // Check if pixipal parameter is present
+    if (pixiPal) {
+        updatePixipalImage(pixiPal);
+    } else {
+        console.error("No pixiPal specified");
+    }
+
+
+    const pixipal = document.getElementById('pixipal-image');
     pixipal.addEventListener('click', () => {
         // pixipal.classList.add('pet-animate');
 
