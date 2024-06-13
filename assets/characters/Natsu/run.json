@@ -1,0 +1,134 @@
+{
+    "frames": {
+        "Natsu-run0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 156
+            }
+        },
+        "Natsu-run1.png": {
+            "frame": {
+                "x": 135,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 156
+            }
+        },
+        "Natsu-run2.png": {
+            "frame": {
+                "x": 270,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 156
+            }
+        },
+        "Natsu-run3.png": {
+            "frame": {
+                "x": 0,
+                "y": 156,
+                "w": 135,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 156
+            }
+        },
+        "Natsu-run4.png": {
+            "frame": {
+                "x": 135,
+                "y": 156,
+                "w": 135,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 156
+            }
+        },
+        "Natsu-run5.png": {
+            "frame": {
+                "x": 270,
+                "y": 156,
+                "w": 135,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 156
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "run.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 405,
+            "h": 312
+        }
+    }
+}

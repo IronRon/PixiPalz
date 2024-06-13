@@ -118,7 +118,7 @@ async function runPixiPal(manager) {
 // Function to trigger the taunt animation
 async function feedPixiPal(manager) {
     // Switch to taunt animation
-    manager.frameRate = 200;
+    manager.frameRate = 150;
     await manager.setAnimation('taunt', 'assets/characters/' + pixiPal + '/taunt.json');
 
     // Optionally, wait for the taunt animation to complete before switching back
@@ -126,6 +126,7 @@ async function feedPixiPal(manager) {
     const tauntDuration = manager.calculateAnimationDuration('taunt');
     setTimeout(async () => {
         // Switch back to idle animation after the taunt completes
+        manager.frameRate = 200;
         await manager.setAnimation('idle', 'assets/characters/' + pixiPal + '/idle.json');
     }, tauntDuration);
 }

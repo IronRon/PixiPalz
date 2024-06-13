@@ -77,7 +77,7 @@ async function createWindow(pixipal) {
 
         const contextMenu = new Menu();
         contextMenu.append(new MenuItem({
-            label: 'Feed Pet',
+            label: 'Interact',
             click: () => { win.webContents.send('action', 'feed'); }
         }));
         contextMenu.append(new MenuItem({
@@ -85,6 +85,12 @@ async function createWindow(pixipal) {
             click: () => { 
                 win.webContents.send('action', 'run');
                 moveWindowAcrossScreen(win);
+            }
+        }));
+        contextMenu.append(new MenuItem({
+            label: 'Open Main Menu',
+            click: () => { 
+
             }
         }));
         contextMenu.append(new MenuItem({
@@ -205,24 +211,26 @@ function moveWindowAcrossScreen(window) {
             const moveStep = Math.sign(targetPosition - windowCenterX) * Math.min(10, Math.abs(targetPosition - windowCenterX));
             currentPosition += Math.floor(moveStep);
         }
-
-        window.setBounds({ 
-            x: currentPosition,
-            y: window.getBounds().y,
-            width: win_width,
-            height: win_height 
-        });
         
         // Check if target is reached and call completion function
         if (Math.abs(windowCenterX - targetPosition) <= 40) {
             if (intervalId !== null && !moveStop) {
                 window.webContents.send('action', 'idle');
                 moveStop = true;
+                return;
+            } else if (intervalId !== null) {
+                return;
             }
         } else if (Math.abs(windowCenterX - targetPosition) > 40 && moveStop) { //else if to make the character run again after reaching the mouse and the mouse moves again
             window.webContents.send('action', 'run');
             moveStop = false;
         }
+        window.setBounds({ 
+            x: currentPosition,
+            y: window.getBounds().y,
+            width: win_width,
+            height: win_height 
+        });
     }
 
     // Start moving the window by setting up a polling interval

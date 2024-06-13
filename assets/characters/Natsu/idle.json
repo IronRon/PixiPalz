@@ -1,0 +1,94 @@
+{
+    "frames": {
+        "Nastu-idle0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 216
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 216
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 216
+            }
+        },
+        "Nastu-idle1.png": {
+            "frame": {
+                "x": 240,
+                "y": 0,
+                "w": 240,
+                "h": 216
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 216
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 216
+            }
+        },
+        "Nastu-idle2.png": {
+            "frame": {
+                "x": 0,
+                "y": 216,
+                "w": 240,
+                "h": 216
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 216
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 216
+            }
+        },
+        "Nastu-idle3.png": {
+            "frame": {
+                "x": 240,
+                "y": 216,
+                "w": 240,
+                "h": 216
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 216
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 216
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "idle.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 480,
+            "h": 432
+        }
+    }
+}
