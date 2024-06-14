@@ -42,6 +42,7 @@
         .container {
             text-align: center;
             width: 100%;
+            position: relative;
         }
 
         .carousel {
@@ -64,6 +65,10 @@
             border-radius: 15px;
             background-size: contain;
             background-color: aqua;
+            background-image: linear-gradient(to right, #a145df, #49a09d);
+            display: flex;
+            flex-direction: column;
+            pointer-events: none;
         }
 
         .carousel-item-1 {
@@ -93,6 +98,7 @@
             transform: translatex(-50%);
             width: 430px;
             z-index: 2;
+            pointer-events: auto;
         }
 
         .carousel-item-4 {
@@ -108,8 +114,28 @@
 
         .carousel-item img {
             width: auto;
-            height: 150px;
-            /* Adjust based on your image sizes */
+            height: 50%;
+        }
+
+        .carousel-item button {
+            width: auto;
+            height: 20%;
+        }
+
+        .carousel-item p {
+            width: auto;
+            height: 20%;
+            padding: 8px 10px;
+            margin: 0;
+            text-align: center;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-item-3 p {
+            font-size: 28px;
         }
 
         .container {
@@ -158,29 +184,47 @@
         <h1>Choose Your Pixipal</h1>
         <div id="carousel" class="carousel">
             <div class="carousel-item carousel-item-1">
-                Asta
+                <p>Asta</p>
                 <img src="assets/characters/Asta/Asta_idle.gif">
                 <button class="select-button" data-pixipal="Asta">Select Asta</button>
             </div>
             <div class="carousel-item carousel-item-2">
-                Noelle
+                <p>Noelle</p>
                 <img src="assets/characters/Noelle/noelle_idle.gif">
                 <button class="select-button" data-pixipal="Noelle">Select Noelle</button>
             </div>
             <div class="carousel-item carousel-item-3">
-                Goku Black
+                <p>Goku Black</p>
                 <img src="assets/characters/Goku_Black/GokuBlack_idle.gif">
                 <button class="select-button" data-pixipal="Goku_Black">Select Goku Black</button>
             </div>
             <div class="carousel-item carousel-item-4">
-                Natsu
+                <p>Natsu</p>
                 <img src="assets/characters/Natsu/Natsu-idle.gif">
                 <button class="select-button" data-pixipal="Natsu">Select Natsu</button>
             </div>
-            <div class="carousel-item carousel-item-5 active">
-                Lucy
+            <div class="carousel-item carousel-item-5">
+                <p>Lucy</p>
                 <img src="assets/characters/Lucy/Lucy-idle.gif">
                 <button class="select-button" data-pixipal="Lucy">Select Lucy</button>
+            </div>
+
+            <div class="carousel-item">
+                <p>Goku Black 2oo</p>
+                <img src="assets/characters/Goku_Black/GokuBlack_idle.gif">
+                <button class="select-button" data-pixipal="Goku_Black">Select Goku Black</button>
+            </div>
+
+            <div class="carousel-item">
+                <p>Goku Black 235485787ydt</p>
+                <img src="assets/characters/Goku_Black/GokuBlack_idle.gif">
+                <button class="select-button" data-pixipal="Goku_Black">Select Goku Black</button>
+            </div>
+
+            <div class="carousel-item">
+                <p>Goku Black 55555555555</p>
+                <img src="assets/characters/Goku_Black/GokuBlack_idle.gif">
+                <button class="select-button" data-pixipal="Goku_Black">Select Goku Black</button>
             </div>
         </div>
         <button class="prev">Prev</button>

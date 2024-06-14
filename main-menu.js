@@ -1,18 +1,4 @@
 const { ipcRenderer } = require('electron');
-
-// document.getElementById('pixipal1').addEventListener('click', () => {
-//     ipcRenderer.send('launch-pixipal', 'Asta');
-// });
-
-// document.getElementById('pixipal2').addEventListener('click', () => {
-//     ipcRenderer.send('launch-pixipal', 'Noelle');
-// });
-
-// document.getElementById('pixipal3').addEventListener('click', () => {
-//     ipcRenderer.send('launch-pixipal', 'Goku_Black');
-// });
-
-
 const Container = document.querySelector('.container');
 const carouselItems = document.querySelectorAll('.carousel-item');
 
@@ -26,11 +12,13 @@ class Carousel {
     updateGallery() {
         console.log("update");
         this.carouselArray.forEach(el => {
-            el.classList.remove('carousel-item-1');
-            el.classList.remove('carousel-item-2');
-            el.classList.remove('carousel-item-3');
-            el.classList.remove('carousel-item-4');
-            el.classList.remove('carousel-item-5');
+            el.classList.remove(
+                'carousel-item-1',
+                'carousel-item-2',
+                'carousel-item-3',
+                'carousel-item-4',
+                'carousel-item-5'
+            );
         });
 
         this.carouselArray.slice(0, 5).forEach((el, i) => {

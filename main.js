@@ -16,10 +16,20 @@ async function getImageSize(filePath) {
     }
 }
 
+let mainWindow = null;
+
 function createMainMenu() {
-    const mainWindow = new BrowserWindow({
-        width: 800,
-        height: 600,
+    if (mainWindow && !mainWindow.isDestroyed()) {
+        if (mainWindow.isMinimized()) {
+            mainWindow.restore();  // Restore the window if it is minimized
+        }
+        mainWindow.focus();
+        return;
+    }
+
+    mainWindow = new BrowserWindow({
+        width: 1280,
+        height: 720,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false
@@ -29,6 +39,7 @@ function createMainMenu() {
     mainWindow.loadFile('main-menu.html'); // Load the HTML file containing the menu
 
     mainWindow.on('closed', () => {
+        mainMenuWin = null;
         console.log('Main menu window was closed');
     });
 }
@@ -90,7 +101,7 @@ async function createWindow(pixipal) {
         contextMenu.append(new MenuItem({
             label: 'Open Main Menu',
             click: () => { 
-
+                createMainMenu()
             }
         }));
         contextMenu.append(new MenuItem({
