@@ -1,0 +1,134 @@
+{
+    "frames": {
+        "Lucy-run0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 150
+            }
+        },
+        "Lucy-run1.png": {
+            "frame": {
+                "x": 135,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 150
+            }
+        },
+        "Lucy-run2.png": {
+            "frame": {
+                "x": 270,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 150
+            }
+        },
+        "Lucy-run3.png": {
+            "frame": {
+                "x": 0,
+                "y": 150,
+                "w": 135,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 150
+            }
+        },
+        "Lucy-run4.png": {
+            "frame": {
+                "x": 135,
+                "y": 150,
+                "w": 135,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 150
+            }
+        },
+        "Lucy-run5.png": {
+            "frame": {
+                "x": 270,
+                "y": 150,
+                "w": 135,
+                "h": 150
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 135,
+                "h": 150
+            },
+            "sourceSize": {
+                "w": 135,
+                "h": 150
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "run.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 405,
+            "h": 300
+        }
+    }
+}

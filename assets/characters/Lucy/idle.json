@@ -1,0 +1,94 @@
+{
+    "frames": {
+        "Lucy-idle0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 210
+            }
+        },
+        "Lucy-idle1.png": {
+            "frame": {
+                "x": 240,
+                "y": 0,
+                "w": 240,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 210
+            }
+        },
+        "Lucy-idle2.png": {
+            "frame": {
+                "x": 0,
+                "y": 210,
+                "w": 240,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 210
+            }
+        },
+        "Lucy-idle3.png": {
+            "frame": {
+                "x": 240,
+                "y": 210,
+                "w": 240,
+                "h": 210
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 240,
+                "h": 210
+            },
+            "sourceSize": {
+                "w": 240,
+                "h": 210
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "idle.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 480,
+            "h": 420
+        }
+    }
+}

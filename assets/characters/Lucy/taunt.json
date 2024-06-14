@@ -1,0 +1,214 @@
+{
+    "frames": {
+        "Lucy-taunt0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt1.png": {
+            "frame": {
+                "x": 345,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt2.png": {
+            "frame": {
+                "x": 690,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt3.png": {
+            "frame": {
+                "x": 0,
+                "y": 294,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt4.png": {
+            "frame": {
+                "x": 345,
+                "y": 294,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt5.png": {
+            "frame": {
+                "x": 690,
+                "y": 294,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt6.png": {
+            "frame": {
+                "x": 0,
+                "y": 588,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt7.png": {
+            "frame": {
+                "x": 345,
+                "y": 588,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt8.png": {
+            "frame": {
+                "x": 690,
+                "y": 588,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        },
+        "Lucy-taunt9.png": {
+            "frame": {
+                "x": 0,
+                "y": 882,
+                "w": 345,
+                "h": 294
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 345,
+                "h": 294
+            },
+            "sourceSize": {
+                "w": 345,
+                "h": 294
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "taunt.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 1035,
+            "h": 1176
+        }
+    }
+}

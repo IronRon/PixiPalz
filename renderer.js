@@ -106,7 +106,7 @@ async function idlePixiPal(manager) {
 // Function to trigger the run animation
 async function runPixiPal(manager) {
     // Switch to run animation
-    manager.frameRate = 80;
+    manager.frameRate = 120;
     await manager.setAnimation('run', 'assets/characters/' + pixiPal + '/run.json');
     // Trigger the window move in main
     ipcRenderer.send('start-run', { 
