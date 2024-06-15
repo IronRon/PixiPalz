@@ -4,6 +4,16 @@ const fs = require('fs').promises;
 let pixiPal = null;
 let isTauntAnimationPlaying = false;
 
+function getResourcePath(relativePath) {
+    const basePath = process.resourcesPath; // Path where Electron's resources are loaded in a packaged app
+    const fullPath = path.join(base, relativePath);
+    return url.format({
+        pathname: fullPath,
+        protocol: 'file:',
+        slashes: true
+    });
+}
+
 class AnimationManager {
     constructor(spriteContainerId) {
         this.spriteContainer = document.getElementById(spriteContainerId);
@@ -37,7 +47,9 @@ class AnimationManager {
             width: data.frames[Object.keys(data.frames)[0]].frame.w,
             height: data.frames[Object.keys(data.frames)[0]].frame.h
         });
-        this.spriteContainer.style.backgroundImage = `url('assets/characters/${pixiPal}/${data.meta.image}')`;
+        const imagePath = getResourcePath(`assets/characters/${pixiPal}/${data.meta.image}`);
+        this.spriteContainer.style.backgroundImage = `url("${imagePath}")`;
+        //this.spriteContainer.style.backgroundImage = `url('assets/characters/${pixiPal}/${data.meta.image}')`;
         this.spriteContainer.style.width = `${data.frames[Object.keys(data.frames)[0]].frame.w}px`;
         this.spriteContainer.style.height = `${data.frames[Object.keys(data.frames)[0]].frame.h}px`;
         this.spriteContainer.style.backgroundPosition = `0px 0px`;
