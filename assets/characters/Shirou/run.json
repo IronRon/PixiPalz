@@ -1,0 +1,174 @@
+{
+    "frames": {
+        "Shirou-run0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        },
+        "Shirou-run1.png": {
+            "frame": {
+                "x": 195,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        },
+        "Shirou-run2.png": {
+            "frame": {
+                "x": 390,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        },
+        "Shirou-run3.png": {
+            "frame": {
+                "x": 0,
+                "y": 165,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        },
+        "Shirou-run4.png": {
+            "frame": {
+                "x": 195,
+                "y": 165,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        },
+        "Shirou-run5.png": {
+            "frame": {
+                "x": 390,
+                "y": 165,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        },
+        "Shirou-run6.png": {
+            "frame": {
+                "x": 0,
+                "y": 330,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        },
+        "Shirou-run7.png": {
+            "frame": {
+                "x": 195,
+                "y": 330,
+                "w": 195,
+                "h": 165
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 195,
+                "h": 165
+            },
+            "sourceSize": {
+                "w": 195,
+                "h": 165
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "run.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 585,
+            "h": 495
+        }
+    }
+}

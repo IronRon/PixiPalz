@@ -1,0 +1,474 @@
+{
+    "frames": {
+        "Shirou-taunt0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt1.png": {
+            "frame": {
+                "x": 300,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt2.png": {
+            "frame": {
+                "x": 600,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt3.png": {
+            "frame": {
+                "x": 900,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt4.png": {
+            "frame": {
+                "x": 0,
+                "y": 204,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt5.png": {
+            "frame": {
+                "x": 300,
+                "y": 204,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt6.png": {
+            "frame": {
+                "x": 600,
+                "y": 204,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt7.png": {
+            "frame": {
+                "x": 900,
+                "y": 204,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt8.png": {
+            "frame": {
+                "x": 0,
+                "y": 408,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt9.png": {
+            "frame": {
+                "x": 300,
+                "y": 408,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt10.png": {
+            "frame": {
+                "x": 600,
+                "y": 408,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt11.png": {
+            "frame": {
+                "x": 900,
+                "y": 408,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt12.png": {
+            "frame": {
+                "x": 0,
+                "y": 612,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt13.png": {
+            "frame": {
+                "x": 300,
+                "y": 612,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt14.png": {
+            "frame": {
+                "x": 600,
+                "y": 612,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt15.png": {
+            "frame": {
+                "x": 900,
+                "y": 612,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt16.png": {
+            "frame": {
+                "x": 0,
+                "y": 816,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt17.png": {
+            "frame": {
+                "x": 300,
+                "y": 816,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt18.png": {
+            "frame": {
+                "x": 600,
+                "y": 816,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt19.png": {
+            "frame": {
+                "x": 900,
+                "y": 816,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt20.png": {
+            "frame": {
+                "x": 0,
+                "y": 1020,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt21.png": {
+            "frame": {
+                "x": 300,
+                "y": 1020,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        },
+        "Shirou-taunt22.png": {
+            "frame": {
+                "x": 600,
+                "y": 1020,
+                "w": 300,
+                "h": 204
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 300,
+                "h": 204
+            },
+            "sourceSize": {
+                "w": 300,
+                "h": 204
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "taunt.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 1200,
+            "h": 1224
+        }
+    }
+}
