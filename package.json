@@ -1,19 +1,52 @@
 {
   "name": "pixipalz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pixipalz offers a delightful desktop companion experience, allowing users to select and interact with charming virtual pets that keep them company while performing other tasks on their computer.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "dev": "electron . --enable-live-reload",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ronak Pathak",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^31.0.0"
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
   },
   "dependencies": {
     "image-size": "^1.1.1"
+  },
+  "build": {
+    "appId": "com.github.IronRon.pixipalz",
+    "productName": "Pixipalz",
+    "files": [
+      "**/*",
+      "!**/*.ts",
+      "!*.code-workspace",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/pixipalz_icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/pixipalz_icon.icns"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets"
+    }
   }
 }

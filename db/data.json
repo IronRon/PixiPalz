@@ -3,7 +3,7 @@
         "name": "Asta",
         "level": 1,
         "health": 100,
-        "attack": 25,
+        "strength": 25,
         "defense": 10,
         "speed": 20
     },
@@ -11,7 +11,7 @@
         "name": "Noelle",
         "level": 1,
         "health": 120,
-        "attack": 15,
+        "strength": 15,
         "defense": 15,
         "speed": 6
     },
@@ -19,7 +19,7 @@
         "name": "Goku_Black",
         "level": 1,
         "health": 150,
-        "attack": 40,
+        "strength": 40,
         "defense": 20,
         "speed": 25
     },
@@ -27,7 +27,7 @@
         "name": "Lucy",
         "level": 1,
         "health": 90,
-        "attack": 10,
+        "strength": 10,
         "defense": 8,
         "speed": 7
     },
@@ -35,7 +35,7 @@
         "name": "Natsu",
         "level": 1,
         "health": 130,
-        "attack": 30,
+        "strength": 30,
         "defense": 12,
         "speed": 18
     },
@@ -43,7 +43,7 @@
         "name": "Rin",
         "level": 1,
         "health": 110,
-        "attack": 25,
+        "strength": 25,
         "defense": 13,
         "speed": 15
     },
@@ -51,7 +51,7 @@
         "name": "Shirou",
         "level": 1,
         "health": 95,
-        "attack": 20,
+        "strength": 20,
         "defense": 10,
         "speed": 10
     }

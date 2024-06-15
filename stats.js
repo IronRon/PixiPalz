@@ -20,7 +20,7 @@ class Character {
     }
 }
 
-document.addEventListener('DOMContentLoaded', async function() {
+document.addEventListener('DOMContentLoaded', async function () {
     const params = new URLSearchParams(window.location.search);
     const characterName = params.get('character');
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             document.getElementById('character-name').textContent = character.name;
             document.getElementById('character-level').textContent = character.level;
             document.getElementById('character-health').textContent = character.health;
-            document.getElementById('character-strength').textContent = character.attack;
+            document.getElementById('character-strength').textContent = character.strength;
             document.getElementById('character-defense').textContent = character.defense;
             document.getElementById('character-speed').textContent = character.speed;
         } else {
@@ -40,6 +40,22 @@ document.addEventListener('DOMContentLoaded', async function() {
             document.querySelectorAll('.character-stat').forEach(elem => elem.textContent = '');
         }
     }
+
+    document.getElementById('level-up-btn').addEventListener('click', async function () {
+        if (characterName) {
+            const characterStats = await db.getCharacter(characterName);
+            const character = new Character(
+                characterStats.name,
+                characterStats.level,
+                characterStats.health,
+                characterStats.strength,
+                characterStats.defense,
+                characterStats.speed
+            )
+            character.levelUp();
+            db.saveCharacter(character)
+        }
+    });
 });
 
 async function run() {
