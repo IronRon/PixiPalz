@@ -1,0 +1,414 @@
+{
+    "frames": {
+        "Rin-taunt0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt1.png": {
+            "frame": {
+                "x": 150,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt2.png": {
+            "frame": {
+                "x": 300,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt3.png": {
+            "frame": {
+                "x": 450,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt4.png": {
+            "frame": {
+                "x": 600,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt5.png": {
+            "frame": {
+                "x": 0,
+                "y": 180,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt6.png": {
+            "frame": {
+                "x": 150,
+                "y": 180,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt7.png": {
+            "frame": {
+                "x": 300,
+                "y": 180,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt8.png": {
+            "frame": {
+                "x": 450,
+                "y": 180,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt9.png": {
+            "frame": {
+                "x": 600,
+                "y": 180,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt10.png": {
+            "frame": {
+                "x": 0,
+                "y": 360,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt11.png": {
+            "frame": {
+                "x": 150,
+                "y": 360,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt12.png": {
+            "frame": {
+                "x": 300,
+                "y": 360,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt13.png": {
+            "frame": {
+                "x": 450,
+                "y": 360,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt14.png": {
+            "frame": {
+                "x": 600,
+                "y": 360,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt15.png": {
+            "frame": {
+                "x": 0,
+                "y": 540,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt16.png": {
+            "frame": {
+                "x": 150,
+                "y": 540,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt17.png": {
+            "frame": {
+                "x": 300,
+                "y": 540,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt18.png": {
+            "frame": {
+                "x": 450,
+                "y": 540,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        },
+        "Rin-taunt19.png": {
+            "frame": {
+                "x": 600,
+                "y": 540,
+                "w": 150,
+                "h": 180
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 150,
+                "h": 180
+            },
+            "sourceSize": {
+                "w": 150,
+                "h": 180
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "taunt.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 750,
+            "h": 720
+        }
+    }
+}

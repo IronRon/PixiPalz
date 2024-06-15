@@ -1,0 +1,134 @@
+{
+    "frames": {
+        "Rin-run0.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "sourceSize": {
+                "w": 126,
+                "h": 129
+            }
+        },
+        "Rin-run1.png": {
+            "frame": {
+                "x": 126,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "sourceSize": {
+                "w": 126,
+                "h": 129
+            }
+        },
+        "Rin-run2.png": {
+            "frame": {
+                "x": 0,
+                "y": 129,
+                "w": 126,
+                "h": 129
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "sourceSize": {
+                "w": 126,
+                "h": 129
+            }
+        },
+        "Rin-run3.png": {
+            "frame": {
+                "x": 126,
+                "y": 129,
+                "w": 126,
+                "h": 129
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "sourceSize": {
+                "w": 126,
+                "h": 129
+            }
+        },
+        "Rin-run4.png": {
+            "frame": {
+                "x": 0,
+                "y": 258,
+                "w": 126,
+                "h": 129
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "sourceSize": {
+                "w": 126,
+                "h": 129
+            }
+        },
+        "Rin-run5.png": {
+            "frame": {
+                "x": 126,
+                "y": 258,
+                "w": 126,
+                "h": 129
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 126,
+                "h": 129
+            },
+            "sourceSize": {
+                "w": 126,
+                "h": 129
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/piskelapp/piskel/",
+        "version": "1.0",
+        "image": "run.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 252,
+            "h": 387
+        }
+    }
+}

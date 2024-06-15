@@ -132,8 +132,7 @@ async function createWindow(pixipal) {
 
 ipcMain.on('resize-window', (event, { width, height }) => {
     console.log(`resize ran`);
-    const window = BrowserWindow.getFocusedWindow();
-    if (window) {
+    if (win) {
 
         let mainScreen = screen.getPrimaryDisplay();
         let dimensions = mainScreen.workAreaSize;
@@ -143,7 +142,7 @@ ipcMain.on('resize-window', (event, { width, height }) => {
         let yPos = mainScreen.bounds.height - taskbarHeight - height;
 
         // Get current window bounds
-        const bounds = window.getBounds();
+        const bounds = win.getBounds();
 
         // Calculate new height and maintain the bottom position
         // const newHeight = height;
