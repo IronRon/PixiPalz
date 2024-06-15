@@ -279,6 +279,14 @@ ipcMain.on('stop-moving', () => {
 // app.whenReady().then(createWindow);
 app.whenReady().then(createMainMenu);
 
+let dbInit = true;
+ipcMain.on('init-db', async (event, args) => {
+    if (dbInit) {
+        dbInit = false;
+        event.reply('db-init-result');
+    }
+});
+
 ipcMain.on('launch-pixipal', (event, pixipal) => {
     console.log(`Launching ${pixipal}`);
     createWindow(pixipal); // Now createWindow takes a parameter to decide which Pixipal to load

@@ -1,4 +1,6 @@
 const { ipcRenderer } = require('electron');
+const db = require('./db/index.js');
+
 const Container = document.querySelector('.container');
 const carouselItems = document.querySelectorAll('.carousel-item');
 
@@ -56,4 +58,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.querySelectorAll('.stat-check-button').forEach(button => {
+        button.addEventListener('click', function () {
+            const pixipal = this.getAttribute('data-pixipal');
+            // Redirect to the stat page with the character as a query parameter
+            window.location.href = `stats.html?character=${encodeURIComponent(pixipal)}`;
+        });
+    });
+
+});
+
+ipcRenderer.send('init-db', { version: 1 });
+
+ipcRenderer.on('db-init-result', (event) => {
+    // db.deleteDatabase("CharactersDB")
+    //     .then(() => console.log("Database successfully deleted"))
+    //     .catch(error => console.error("Failed to delete database:", error));
+    //db.resetAndInitializeData()
+    db.initializeDatabase();
+    console.log('Database initialized:');
 });

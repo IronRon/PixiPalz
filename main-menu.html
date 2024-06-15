@@ -117,9 +117,10 @@
             height: 50%;
         }
 
-        .carousel-item button {
+        .character-buttons {
             width: auto;
-            height: 20%;
+            display: flex;
+            flex-direction: row;
         }
 
         .carousel-item p {
@@ -136,6 +137,20 @@
 
         .carousel-item-3 p {
             font-size: 28px;
+        }
+
+        .carousel-item-3 .character-buttons {
+            font-size: 28px;
+        }
+
+        .carousel-item-1 .character-buttons,
+        .carousel-item-5 .character-buttons {
+            font-size: 12px;
+        }
+
+        .carousel-item-2 .character-buttons,
+        .carousel-item-4 .character-buttons {
+            font-size: 16px;
         }
 
         .container {
@@ -176,6 +191,21 @@
         .select-button:hover {
             background-color: #45a049;
         }
+
+        .stat-check-button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .stat-check-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 
@@ -186,39 +216,57 @@
             <div class="carousel-item carousel-item-1">
                 <p>Asta</p>
                 <img src="assets/characters/Asta/Asta_idle.gif">
-                <button class="select-button" data-pixipal="Asta">Select Asta</button>
+                <div class="character-buttons">
+                    <button class="select-button" data-pixipal="Asta">Select Asta</button>
+                    <button class="stat-check-button" data-pixipal="Asta">Check Stats</button>
+                </div>
             </div>
             <div class="carousel-item carousel-item-2">
                 <p>Noelle</p>
                 <img src="assets/characters/Noelle/noelle_idle.gif">
-                <button class="select-button" data-pixipal="Noelle">Select Noelle</button>
+                <div class="character-buttons">
+                    <button class="select-button" data-pixipal="Noelle">Select Noelle</button>
+                    <button class="stat-check-button" data-pixipal="Noelle">Check Stats</button>
+                </div>
             </div>
             <div class="carousel-item carousel-item-3">
                 <p>Goku Black</p>
-                <img src="assets/characters/Goku_Black/GokuBlack_idle.gif">
-                <button class="select-button" data-pixipal="Goku_Black">Select Goku Black</button>
+                <img src="assets/characters/Goku_Black/Goku_Black_idle.gif">
+                <div class="character-buttons"><button class="select-button" data-pixipal="Goku_Black">Select Goku
+                        Black</button>
+                    <button class="stat-check-button" data-pixipal="Goku_Black">Check Stats</button>
+                </div>
             </div>
             <div class="carousel-item carousel-item-4">
                 <p>Natsu</p>
-                <img src="assets/characters/Natsu/Natsu-idle.gif">
-                <button class="select-button" data-pixipal="Natsu">Select Natsu</button>
+                <img src="assets/characters/Natsu/Natsu_idle.gif">
+                <div class="character-buttons"><button class="select-button" data-pixipal="Natsu">Select Natsu</button>
+                    <button class="stat-check-button" data-pixipal="Natsu">Check Stats</button>
+                </div>
             </div>
             <div class="carousel-item carousel-item-5">
                 <p>Lucy</p>
-                <img src="assets/characters/Lucy/Lucy-idle.gif">
-                <button class="select-button" data-pixipal="Lucy">Select Lucy</button>
+                <img src="assets/characters/Lucy/Lucy_idle.gif">
+                <div class="character-buttons"><button class="select-button" data-pixipal="Lucy">Select Lucy</button>
+                    <button class="stat-check-button" data-pixipal="Lucy">Check Stats</button>
+                </div>
             </div>
 
             <div class="carousel-item">
                 <p>Shirou</p>
-                <img src="assets/characters/Shirou/Shirou-idle.gif">
-                <button class="select-button" data-pixipal="Shirou">Select Shirou</button>
+                <img src="assets/characters/Shirou/Shirou_idle.gif">
+                <div class="character-buttons"><button class="select-button" data-pixipal="Shirou">Select
+                        Shirou</button>
+                    <button class="stat-check-button" data-pixipal="Shirou">Check Stats</button>
+                </div>
             </div>
 
             <div class="carousel-item">
                 <p>Rin</p>
-                <img src="assets/characters/Rin/Rin-idle.gif">
-                <button class="select-button" data-pixipal="Rin">Select Rin</button>
+                <img src="assets/characters/Rin/Rin_idle.gif">
+                <div class="character-buttons"><button class="select-button" data-pixipal="Rin">Select Rin</button>
+                    <button class="stat-check-button" data-pixipal="Rin">Check Stats</button>
+                </div>
             </div>
 
         </div>
