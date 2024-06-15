@@ -2,6 +2,7 @@ const { ipcRenderer } = require('electron');
 const fs = require('fs').promises;
 
 let pixiPal = null;
+let isTauntAnimationPlaying = false;
 
 class AnimationManager {
     constructor(spriteContainerId) {
@@ -32,9 +33,9 @@ class AnimationManager {
 
     // Initialize or update animation frames
     setupAnimation(data) {
-        ipcRenderer.send('resize-window', { 
-            width: data.frames[Object.keys(data.frames)[0]].frame.w, 
-            height: data.frames[Object.keys(data.frames)[0]].frame.h 
+        ipcRenderer.send('resize-window', {
+            width: data.frames[Object.keys(data.frames)[0]].frame.w,
+            height: data.frames[Object.keys(data.frames)[0]].frame.h
         });
         this.spriteContainer.style.backgroundImage = `url('assets/characters/${pixiPal}/${data.meta.image}')`;
         this.spriteContainer.style.width = `${data.frames[Object.keys(data.frames)[0]].frame.w}px`;
@@ -46,7 +47,7 @@ class AnimationManager {
         let frames = [];
         for (let key in data.frames) {
             const frame = data.frames[key].frame;
-            frames.push({x: -frame.x, y: -frame.y});
+            frames.push({ x: -frame.x, y: -frame.y });
         }
 
         this.animate(frames);
@@ -79,7 +80,7 @@ class AnimationManager {
 const manager = new AnimationManager('pixipal-image');
 
 ipcRenderer.on('action', (event, action) => {
-    switch(action) {
+    switch (action) {
         case 'feed':
             feedPixiPal(manager);
             console.log('PixiPal is fed!');
@@ -109,26 +110,30 @@ async function runPixiPal(manager) {
     manager.frameRate = 120;
     await manager.setAnimation('run', 'assets/characters/' + pixiPal + '/run.json');
     // Trigger the window move in main
-    ipcRenderer.send('start-run', { 
-        width: parseInt(manager.spriteContainer.style.width, 10), 
+    ipcRenderer.send('start-run', {
+        width: parseInt(manager.spriteContainer.style.width, 10),
         height: parseInt(manager.spriteContainer.style.height, 10)
     });
 }
 
 // Function to trigger the taunt animation
 async function feedPixiPal(manager) {
-    // Switch to taunt animation
-    manager.frameRate = 150;
-    await manager.setAnimation('taunt', 'assets/characters/' + pixiPal + '/taunt.json');
+    if (!isTauntAnimationPlaying) {
+        isTauntAnimationPlaying = true;
+        // Switch to taunt animation
+        manager.frameRate = 150;
+        await manager.setAnimation('taunt', 'assets/characters/' + pixiPal + '/taunt.json');
 
-    // Optionally, wait for the taunt animation to complete before switching back
-    // This requires knowing the duration of the animation
-    const tauntDuration = manager.calculateAnimationDuration('taunt');
-    setTimeout(async () => {
-        // Switch back to idle animation after the taunt completes
-        manager.frameRate = 200;
-        await manager.setAnimation('idle', 'assets/characters/' + pixiPal + '/idle.json');
-    }, tauntDuration);
+        // Optionally, wait for the taunt animation to complete before switching back
+        // This requires knowing the duration of the animation
+        const tauntDuration = manager.calculateAnimationDuration('taunt');
+        setTimeout(async () => {
+            // Switch back to idle animation after the taunt completes
+            manager.frameRate = 200;
+            await manager.setAnimation('idle', 'assets/characters/' + pixiPal + '/idle.json');
+            isTauntAnimationPlaying = false; // Reset the flag when animation ends
+        }, tauntDuration);
+    }
 }
 
 function updatePixipalImage(pixipal) {
@@ -154,13 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const pixipal = document.getElementById('pixipal-image');
     pixipal.addEventListener('click', () => {
-        // pixipal.classList.add('pet-animate');
-
-        // setTimeout(() => {
-        //     pixipal.classList.remove('pet-animate');
-        // }, 1000);
         ipcRenderer.send('stop-moving');
-        feedPixiPal(manager);
+        if (!isTauntAnimationPlaying) {
+            feedPixiPal(manager);
+        }
     });
 
     ipcRenderer.on('change-direction', (event, direction) => {

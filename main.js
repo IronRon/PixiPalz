@@ -17,6 +17,7 @@ async function getImageSize(filePath) {
 }
 
 let mainWindow = null;
+let isCharacterRunning = false;
 
 function createMainMenu() {
     if (mainWindow && !mainWindow.isDestroyed()) {
@@ -94,8 +95,13 @@ async function createWindow(pixipal) {
         contextMenu.append(new MenuItem({
             label: 'Run',
             click: () => { 
-                win.webContents.send('action', 'run');
-                moveWindowAcrossScreen(win);
+                if (!isCharacterRunning) {
+                    isCharacterRunning = true;
+                    win.webContents.send('action', 'run');
+                    moveWindowAcrossScreen(win);
+                } else {
+                    console.log("Character already runnig");
+                }
             }
         }));
         contextMenu.append(new MenuItem({
@@ -267,6 +273,7 @@ ipcMain.on('stop-moving', () => {
         intervalId = null;
         console.log('Mouse following stopped due to window click.');
     }
+    isCharacterRunning = false;
 });
 
 // app.whenReady().then(createWindow);
