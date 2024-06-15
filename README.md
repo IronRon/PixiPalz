@@ -2,9 +2,13 @@
 
 Welcome to Pixipalz, the desktop pet app that brings a charming virtual companion to your workspace! Whether you're coding, designing, or just surfing the web, Pixipalz provides a delightful distraction that keeps you company and adds a touch of fun to your desktop.
 
+![Main Menu](image.png)
+
 ## Description
 
 Pixipalz allows you to select from a variety of adorable characters that live on your desktop. These pets can perform various animations and interact with you while you perform other tasks on your computer. It's designed to bring a little joy and companionship to your day without getting in the way of your productivity.
+
+![Example](image-1.png)
 
 ## Features
 
