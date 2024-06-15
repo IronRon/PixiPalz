@@ -4,13 +4,13 @@ Welcome to Pixipalz, the desktop pet app that brings a charming virtual companio
 
 ![Main Menu](image.png)
 
-## Description
+# Description
 
 Pixipalz allows you to select from a variety of adorable characters that live on your desktop. These pets can perform various animations and interact with you while you perform other tasks on your computer. It's designed to bring a little joy and companionship to your day without getting in the way of your productivity.
 
 ![Example](image-1.png)
 
-## Features
+# Features
 
 - **Choose Your Pet**: Select from a range of characters with unique appearances and personalities.
 - **Interactivity**: Your desktop pet can respond to your clicks and interactions.
@@ -71,7 +71,7 @@ Pixipalz is built using a combination of modern technologies, frameworks, and la
 
 This technology stack helps in delivering a seamless and engaging user experience, making Pixipalz an enjoyable desktop companion.
 
-## Installation
+# Installation
 
 ### Prerequisites
 Before installing Pixipalz, make sure you have the following software installed on your computer:
@@ -87,14 +87,14 @@ git clone https://github.com/your-username/pixipalz.git
 cd pixipalz
 ```
 
-## Installing Dependencies
+### Installing Dependencies
 Install all the necessary dependencies by executing:
 
 ```bash
 npm install
 ```
 
-## Running the Application
+### Running the Application
 To run the application locally, use the following command:
 
 ```bash
@@ -102,7 +102,7 @@ npm run start
 ```
 
 
-## Credits
+# Credits
 
 Pixipalz uses assets and resources provided by the following creators and websites. I sincerely thank them for their contributions and encourage you to support them:
 
