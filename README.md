@@ -74,10 +74,33 @@ This technology stack helps in delivering a seamless and engaging user experienc
 ## Installation
 
 ### Prerequisites
-
 Before installing Pixipalz, make sure you have the following software installed on your computer:
 
 - [Node.js](https://nodejs.org/en/download/) (which includes npm)
+- [Git](https://git-scm.com/) for cloning the repository
+
+### Cloning the Repository
+To get started, clone the repository to your local machine by running:
+
+```bash
+git clone https://github.com/your-username/pixipalz.git
+cd pixipalz
+```
+
+## Installing Dependencies
+Install all the necessary dependencies by executing:
+
+```bash
+npm install
+```
+
+## Running the Application
+To run the application locally, use the following command:
+
+```bash
+npm run start
+```
+
 
 ## Credits
 
