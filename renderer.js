@@ -1,12 +1,14 @@
 const { ipcRenderer } = require('electron');
 const fs = require('fs').promises;
+const path = require('path');
+const url = require('url');
 
 let pixiPal = null;
 let isTauntAnimationPlaying = false;
 
 function getResourcePath(relativePath) {
     const basePath = process.resourcesPath; // Path where Electron's resources are loaded in a packaged app
-    const fullPath = path.join(base, relativePath);
+    const fullPath = path.join(basePath, relativePath);
     return url.format({
         pathname: fullPath,
         protocol: 'file:',
@@ -47,9 +49,10 @@ class AnimationManager {
             width: data.frames[Object.keys(data.frames)[0]].frame.w,
             height: data.frames[Object.keys(data.frames)[0]].frame.h
         });
-        const imagePath = getResourcePath(`assets/characters/${pixiPal}/${data.meta.image}`);
-        this.spriteContainer.style.backgroundImage = `url("${imagePath}")`;
-        //this.spriteContainer.style.backgroundImage = `url('assets/characters/${pixiPal}/${data.meta.image}')`;
+        //const imagePath = getResourcePath(`assets/characters/${pixiPal}/${data.meta.image}`);
+        //console.log(`url("${imagePath}")`);
+        //this.spriteContainer.style.backgroundImage = `url("${imagePath}")`;
+        this.spriteContainer.style.backgroundImage = `url('assets/characters/${pixiPal}/${data.meta.image}')`;
         this.spriteContainer.style.width = `${data.frames[Object.keys(data.frames)[0]].frame.w}px`;
         this.spriteContainer.style.height = `${data.frames[Object.keys(data.frames)[0]].frame.h}px`;
         this.spriteContainer.style.backgroundPosition = `0px 0px`;
